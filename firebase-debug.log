@@ -1,0 +1,119 @@
+[debug] [2025-04-18T10:41:24.359Z] ----------------------------------------------------------------------
+[debug] [2025-04-18T10:41:24.361Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vijay\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-04-18T10:41:24.361Z] CLI Version:   14.2.0
+[debug] [2025-04-18T10:41:24.362Z] Platform:      win32
+[debug] [2025-04-18T10:41:24.362Z] Node Version:  v22.14.0
+[debug] [2025-04-18T10:41:24.362Z] Time:          Fri Apr 18 2025 16:11:24 GMT+0530 (India Standard Time)
+[debug] [2025-04-18T10:41:24.362Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-18T10:41:24.366Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-18T10:41:24.366Z] > authorizing via signed-in user (vjdheepak55@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\vijay\canvas-angular
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-04-18T10:42:39.859Z] Checked if tokens are valid: true, expires at: 1744976361457
+[debug] [2025-04-18T10:42:39.859Z] Checked if tokens are valid: true, expires at: 1744976361457
+[debug] [2025-04-18T10:42:39.860Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-04-18T10:42:39.860Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"angular-app-123","name":"angular-app-123"}
+[debug] [2025-04-18T10:42:41.252Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2025-04-18T10:42:41.252Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2025-04-18T10:42:41.349Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\vijay\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\vijay\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID angular-app-123. Please try again with a unique project ID.
+[debug] [2025-04-18T10:43:07.937Z] ----------------------------------------------------------------------
+[debug] [2025-04-18T10:43:07.939Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vijay\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:create
+[debug] [2025-04-18T10:43:07.940Z] CLI Version:   14.2.0
+[debug] [2025-04-18T10:43:07.940Z] Platform:      win32
+[debug] [2025-04-18T10:43:07.940Z] Node Version:  v22.14.0
+[debug] [2025-04-18T10:43:07.940Z] Time:          Fri Apr 18 2025 16:13:07 GMT+0530 (India Standard Time)
+[debug] [2025-04-18T10:43:07.940Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-18T10:43:07.944Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-18T10:43:07.944Z] > authorizing via signed-in user (vjdheepak55@gmail.com)
+[debug] [2025-04-18T10:43:17.622Z] Checked if tokens are valid: true, expires at: 1744976361457
+[debug] [2025-04-18T10:43:17.623Z] Checked if tokens are valid: true, expires at: 1744976361457
+[debug] [2025-04-18T10:43:17.625Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-04-18T10:43:17.625Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"angularv123","name":"angularv123"}
+[debug] [2025-04-18T10:43:19.269Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-04-18T10:43:19.269Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.8754606832726270465"}
+[debug] [2025-04-18T10:43:19.270Z] Checked if tokens are valid: true, expires at: 1744976361457
+[debug] [2025-04-18T10:43:19.270Z] Checked if tokens are valid: true, expires at: 1744976361457
+[debug] [2025-04-18T10:43:19.270Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8754606832726270465 [none]
+[debug] [2025-04-18T10:43:20.504Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8754606832726270465 200
+[debug] [2025-04-18T10:43:20.504Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8754606832726270465 {"name":"operations/create_project.global.8754606832726270465","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2025-04-18T10:43:20.597Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (C:\Users\vijay\AppData\Roaming\npm\node_modules\firebase-tools\lib\operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCloudProject (C:\Users\vijay\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:213:29)
+    at async createFirebaseProjectAndLog (C:\Users\vijay\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:71:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2025-04-18T10:44:48.885Z] ----------------------------------------------------------------------
+[debug] [2025-04-18T10:44:48.887Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vijay\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:create
+[debug] [2025-04-18T10:44:48.888Z] CLI Version:   14.2.0
+[debug] [2025-04-18T10:44:48.888Z] Platform:      win32
+[debug] [2025-04-18T10:44:48.888Z] Node Version:  v22.14.0
+[debug] [2025-04-18T10:44:48.888Z] Time:          Fri Apr 18 2025 16:14:48 GMT+0530 (India Standard Time)
+[debug] [2025-04-18T10:44:48.888Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-18T10:44:48.892Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-18T10:44:48.893Z] > authorizing via signed-in user (vjdheepak55@gmail.com)
+[debug] [2025-04-18T10:45:15.984Z] Checked if tokens are valid: true, expires at: 1744976361457
+[debug] [2025-04-18T10:45:15.984Z] Checked if tokens are valid: true, expires at: 1744976361457
+[debug] [2025-04-18T10:45:15.986Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-04-18T10:45:15.986Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"angularvij55","name":"angularvij55"}
+[debug] [2025-04-18T10:45:17.412Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-04-18T10:45:17.413Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.5285141666461557555"}
+[debug] [2025-04-18T10:45:17.414Z] Checked if tokens are valid: true, expires at: 1744976361457
+[debug] [2025-04-18T10:45:17.414Z] Checked if tokens are valid: true, expires at: 1744976361457
+[debug] [2025-04-18T10:45:17.414Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5285141666461557555 [none]
+[debug] [2025-04-18T10:45:18.636Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5285141666461557555 200
+[debug] [2025-04-18T10:45:18.636Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5285141666461557555 {"name":"operations/create_project.global.5285141666461557555","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2025-04-18T10:45:18.732Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (C:\Users\vijay\AppData\Roaming\npm\node_modules\firebase-tools\lib\operation-poller.js:24:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCloudProject (C:\Users\vijay\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:213:29)
+    at async createFirebaseProjectAndLog (C:\Users\vijay\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:71:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2025-04-18T10:46:52.677Z] ----------------------------------------------------------------------
+[debug] [2025-04-18T10:46:52.679Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vijay\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:create
+[debug] [2025-04-18T10:46:52.679Z] CLI Version:   14.2.0
+[debug] [2025-04-18T10:46:52.679Z] Platform:      win32
+[debug] [2025-04-18T10:46:52.679Z] Node Version:  v22.14.0
+[debug] [2025-04-18T10:46:52.680Z] Time:          Fri Apr 18 2025 16:16:52 GMT+0530 (India Standard Time)
+[debug] [2025-04-18T10:46:52.680Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-18T10:46:52.684Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-18T10:46:52.684Z] > authorizing via signed-in user (vjdheepak55@gmail.com)
+[debug] [2025-04-18T10:47:00.793Z] Checked if tokens are valid: true, expires at: 1744976361457
+[debug] [2025-04-18T10:47:00.794Z] Checked if tokens are valid: true, expires at: 1744976361457
+[debug] [2025-04-18T10:47:00.795Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-04-18T10:47:00.795Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"aasasas","name":"aasasas"}
+[debug] [2025-04-18T10:47:02.154Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2025-04-18T10:47:02.154Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2025-04-18T10:47:02.250Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\vijay\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\vijay\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID aasasas. Please try again with a unique project ID.
